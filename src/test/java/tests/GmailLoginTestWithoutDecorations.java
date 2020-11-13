@@ -19,7 +19,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.Homepage;
 import pages.Loginpage;
 import pages.Logoutpage;
-import utilities.TestUtilityWithoutDecorations;
+import utilities.TestUtility;
 
 public class GmailLoginTestWithoutDecorations 
 {
@@ -38,7 +38,7 @@ public class GmailLoginTestWithoutDecorations
 		String cname=sf.format(dt);
 		sh.getRow(0).createCell(nouc).setCellValue("Result on "+cname);
 		//Create object to utility class
-		TestUtilityWithoutDecorations tu=new TestUtilityWithoutDecorations();
+		TestUtility tu=new TestUtility();
 		//Data Driven from 2nd row(index=1)
 		for(int i=1;i<nour;i++)
 		{
